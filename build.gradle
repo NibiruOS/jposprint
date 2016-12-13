@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.7
+version = '0.1-SNAPSHOT'
+group = 'ar.com.system.print'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	jcenter()
+	maven {
+		url "https://oss.sonatype.org/content/repositories/snapshots/"
+	}
+}
+
+jar {
+   from sourceSets.main.java.srcDirs 
+}
+
+dependencies {
+	compile "com.google.code.findbugs:jsr305:2.0.3"
+	compile 'com.google.guava:guava:20.0'
+	compile "com.google.inject:guice:3.0:no_aop"
+	compile "javax.inject:javax.inject:1"
+	compile 'com.squareup.okhttp3:okhttp:3.5.0'
+	testCompile 'junit:junit:4.12'
+}
