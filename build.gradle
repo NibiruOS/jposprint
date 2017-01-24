@@ -1,8 +1,13 @@
+plugins {
+  id "me.tatarka.retrolambda" version "3.4.0"
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-sourceCompatibility = 1.7
+
+sourceCompatibility = 1.8
 version = '0.1-SNAPSHOT'
 group = 'ar.com.system.print'
 
