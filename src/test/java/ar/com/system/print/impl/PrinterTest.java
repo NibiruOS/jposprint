@@ -12,19 +12,33 @@ public class PrinterTest {
 	@Test
 	public void printMessageTest() {
 		printer.beginReceipt();
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		sleeper.sleep(3000);
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		sleeper.sleep(3000);
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		sleeper.sleep(3000);
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		sleeper.sleep(3000);
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		sleeper.sleep(3000);
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		sleeper.sleep(3000);
+		printer.beginLine(1);
 		printer.printMessage("Hello world");
+		printer.endLine();
 		printer.endReceipt();
 	}
 }

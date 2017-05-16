@@ -1,9 +1,17 @@
 package ar.com.system.print.api;
 
+import java.awt.image.BufferedImage;
+
 public interface Printer {
-	public void beginReceipt();
+	void beginReceipt();
 
-	public void endReceipt();
+	void endReceipt();
 
-	public void printMessage(String message);
+	void beginLine(int textSize);
+
+	void endLine();
+
+	void printMessage(String message);
+	
+	void printImage(BufferedImage image);
 }
