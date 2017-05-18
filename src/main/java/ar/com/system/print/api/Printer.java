@@ -14,4 +14,6 @@ public interface Printer {
 	void printMessage(String message);
 	
 	void printImage(BufferedImage image);
+	
+	void cut(String type);
 }
